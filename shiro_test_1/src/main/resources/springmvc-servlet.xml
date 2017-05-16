@@ -40,5 +40,5 @@
 		<property name="supportedMediaTypes"> <list> <value>text/html;charset=UTF-8</value> 
 		<value>application/json;charset=UTF-8</value> </list> </property> <property 
 		name="objectMapper" ref="jacksonObjectMapper" /> </bean> -->
-
+<import resource="classpath:spring-config.xml"/>
 </beans>
