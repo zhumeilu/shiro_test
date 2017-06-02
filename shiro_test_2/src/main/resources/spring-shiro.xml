@@ -19,7 +19,7 @@
 	</bean>
 
 	<!-- 項目自定义的Realm -->
-	<bean id="shiroDbRealm" class="com.lottery.common.shiro.ShiroDbRealm" />
+	<bean id="userRealm" class="com.zml.shiro_test.shiro.UserRealm" />
 
 	<!-- 记住密码Cookie -->
 	<bean id="rememberMeCookie" class="org.apache.shiro.web.servlet.SimpleCookie">

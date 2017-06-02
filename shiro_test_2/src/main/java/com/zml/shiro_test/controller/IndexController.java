@@ -13,13 +13,14 @@ public class IndexController {
 	@Autowired
 	IUserService userService;
 	
-	@RequestMapping("/index")
-	public void index(){
+	@RequestMapping("/")
+	public String index(){
 		System.out.println("---------index-------------");
 		User user = new User();
 		user.setUsername("zml");
 		user.setPassword("123456");
 		userService.save(user);
+		return "index";
 	}
 	
 }
