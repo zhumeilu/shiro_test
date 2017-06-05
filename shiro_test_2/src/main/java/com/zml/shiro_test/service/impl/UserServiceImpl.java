@@ -15,4 +15,8 @@ public class UserServiceImpl implements IUserService {
 	@Override
 	public void save(User user) {
 		userMapper.insert(user);
+	}
+	@Override
+	public User getUserByUsername(String username) {
+		return userMapper.getUserByUsername(username);
 	}}

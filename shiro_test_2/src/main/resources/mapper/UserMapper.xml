@@ -14,4 +14,8 @@
 		insert into user (username,password) values(#{username},#{password})
 	</insert>
 
+	<select id="selectByUsername" resultType="com.zml.shiro_test.model.User">
+	select * from user 
+	where username = #{username}
+	</select>
 </mapper>
