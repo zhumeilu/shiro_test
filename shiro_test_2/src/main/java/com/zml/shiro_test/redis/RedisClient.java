@@ -96,5 +96,11 @@ public class RedisClient {
 		pool.returnBrokenResource(jedis);
 		return keysSet;
 	}
-	
+
+	public boolean clear() {
+		return false;
+	}
+	public int size(){
+		return 0;
+	}
 }
